@@ -8,6 +8,11 @@ Etapas da aplicação:
 * Selecionar plano
 * Preencher dados pessoais
 
+Acesse a aplicação:
+```
+https://richsalles.github.io/challenge-frontend-angular/
+```
+
 ---
 
 ## Stack utilizado

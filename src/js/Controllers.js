@@ -47,6 +47,7 @@ angular.module('main')
             }
 
             reorganize();
+
         }
         
     }).controller('plansController', function($scope, $http, Scopes) {
