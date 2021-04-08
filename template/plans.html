@@ -1,0 +1,18 @@
+<div class="options-plans-content" ng-controller="plansController">
+    <div class="options-plans-item" ng-repeat="plan in plans">
+        <p class="options-plans-name">{{plan.franquia}}</p>
+        <p class="options-plans-description">R$ {{plan.valor}}</p>
+
+        <div ng-if="plan.aparelho" class="options-plans-additional-info">
+            <p class="options-plans-equipment--name">{{plan.aparelho.nome}}</p>
+            <p class="options-plans-equipment--price">Preço: R$ {{plan.aparelho.valor}}</p>
+            <p ng-if="plan.aparelho.numeroParcelas > 1" class="options-plans-equipment--parcel">ou : {{plan.aparelho.numeroParcelas}}x de 
+                <span ng-hide="plan.aparelho.valorParcela == false" class="options-plans-equipment--value-parcel">R$ {{plan.aparelho.valorParcela}}</span>
+            </p>
+        </div>
+
+        <div class="options-plans-button-content">
+            <a href="#!personal-data" ng-click="getPlanName(plan.franquia)" class="button">Selecionar</a>
+        </div>
+    </div>
+</div>

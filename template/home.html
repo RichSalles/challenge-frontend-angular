@@ -1,0 +1,10 @@
+<div class="options-content" ng-controller="homeControllerPlatform" after-render="missionCompled" style="display: none">
+    <div class="options-item" ng-repeat="platform in platforms" >
+        <p class="options-name" >{{platform.nome}}</p>
+        <p class="options-description"  >{{platform.descricao | split }}</p>
+        <div class="options-button-content">
+            <a href="#!plans" ng-click="getNamePlatform(platform.nome); getSkuPlatform(platform.sku)" class="button">Ver Opções</a>
+        </div>
+    </div>
+</div>
+
